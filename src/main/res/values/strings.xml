@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Cheat by adding a trailing space to make the title and spinner look like one sentence. -->
+
+  <string name="no_intent_handler">
+    There are no applications available to handle this action.
+  </string>
+  <string name="error_title">Oops!</string>
+  <string name="error_message">
+    An error occurred loading the resource.\nPlease try again later.
+  </string>
+  <string name="empty_title">Find nothing…</string>
+  <string name="empty_message">
+    There doesn\'t seem to be any emotions.
+  </string>
+  <string name="buy">BUY NOW!</string>
+  <string name="limit_stock">(Only 1 more in stock!)</string>
+</resources>
