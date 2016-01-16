@@ -4,7 +4,7 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:1.5.0'
+    classpath 'com.android.tools.build:gradle:2.0.0-alpha5'
     classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     classpath 'me.tatarka:gradle-retrolambda:3.2.3'
     classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2'
@@ -157,7 +157,10 @@ dependencies {
   androidTestCompile 'junit:junit:4.12'
   androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
   // TODO https://code.google.com/p/android-test-kit/issues/detail?id=157
-  //androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2'
+  androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2'){
+      exclude group: 'com.android.support', module: 'support-v4'
+      exclude group: 'com.android.support', module: 'recyclerview-v7'
+  }
   androidTestCompile 'com.android.support.test:runner:0.4.1'
   androidTestCompile 'com.android.support.test:rules:0.4.1'
   androidTestCompile 'com.squareup.spoon:spoon-client:1.2.0'
