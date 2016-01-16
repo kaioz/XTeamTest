@@ -83,6 +83,7 @@ android {
   }
 
   lintOptions {
+    abortOnError false
     textReport true
     textOutput 'stdout'
     fatal 'UnusedResources'
